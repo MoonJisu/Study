@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		9FF3D3DA2653AEC000A8C03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF3D3D82653AEC000A8C03D /* Main.storyboard */; };
 		9FF3D3DC2653AEC300A8C03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF3D3DB2653AEC300A8C03D /* Assets.xcassets */; };
 		9FF3D3DF2653AEC300A8C03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF3D3DD2653AEC300A8C03D /* LaunchScreen.storyboard */; };
+		9FF3D3E92653C61900A8C03D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3D3E82653C61900A8C03D /* State.swift */; };
+		9FF3D3EB2653C86400A8C03D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3D3EA2653C86400A8C03D /* Action.swift */; };
 		DD054D730CDD95D650524C84 /* Pods_Study_ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AA6A7321B785A1642FD70 /* Pods_Study_ReSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		9FF3D3DB2653AEC300A8C03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF3D3DE2653AEC300A8C03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF3D3E02653AEC300A8C03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF3D3E82653C61900A8C03D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		9FF3D3EA2653C86400A8C03D /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				9FF3D3D22653AEC000A8C03D /* AppDelegate.swift */,
+				9FF3D3E82653C61900A8C03D /* State.swift */,
+				9FF3D3EA2653C86400A8C03D /* Action.swift */,
 				9FF3D3D42653AEC000A8C03D /* SceneDelegate.swift */,
 				9FF3D3D62653AEC000A8C03D /* ViewController.swift */,
 				9FF3D3D82653AEC000A8C03D /* Main.storyboard */,
@@ -88,7 +94,6 @@
 				6E5D8F5506F96A60E0A271DA /* Pods-Study_ReSwift.debug.xcconfig */,
 				0A6D81C3BC805652EF376AFE /* Pods-Study_ReSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +214,8 @@
 				9FF3D3D72653AEC000A8C03D /* ViewController.swift in Sources */,
 				9FF3D3D32653AEC000A8C03D /* AppDelegate.swift in Sources */,
 				9FF3D3D52653AEC000A8C03D /* SceneDelegate.swift in Sources */,
+				9FF3D3EB2653C86400A8C03D /* Action.swift in Sources */,
+				9FF3D3E92653C61900A8C03D /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

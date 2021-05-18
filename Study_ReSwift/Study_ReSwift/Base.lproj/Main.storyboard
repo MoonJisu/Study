@@ -16,17 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frt-vy-DSd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frt-vy-DSd">
                                 <rect key="frame" x="186" y="323" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-zJ-NTU">
+                                <rect key="frame" x="154" y="408" width="30" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="8M5-AM-VP7"/>
+                                    <constraint firstAttribute="height" constant="42" id="iFC-xP-xnx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="upTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9i0-dD-kLV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhq-Af-zhX">
+                                <rect key="frame" x="254" y="408" width="30" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="dHT-xW-Y7E"/>
+                                    <constraint firstAttribute="width" constant="30" id="urT-dq-zfh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="downTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7m-hk-pUb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hhq-Af-zhX" secondAttribute="trailing" constant="130" id="FZQ-MN-QJf"/>
+                            <constraint firstItem="Frt-vy-DSd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="279" id="Itn-7S-sfI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Frt-vy-DSd" secondAttribute="bottom" constant="518" id="Xvh-Fz-mkR"/>
+                            <constraint firstItem="Frt-vy-DSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gDp-Bh-Nid"/>
+                            <constraint firstItem="Hhq-Af-zhX" firstAttribute="leading" secondItem="ITC-zJ-NTU" secondAttribute="trailing" constant="70" id="gKu-qy-rYK"/>
+                            <constraint firstItem="Hhq-Af-zhX" firstAttribute="baseline" secondItem="ITC-zJ-NTU" secondAttribute="baseline" id="hfy-jB-hYT"/>
+                            <constraint firstItem="Hhq-Af-zhX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="364" id="mz6-LX-xpS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="Frt-vy-DSd" id="QbZ-uX-kca"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

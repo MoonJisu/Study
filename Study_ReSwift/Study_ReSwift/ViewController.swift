@@ -6,14 +6,29 @@
 //
 
 import UIKit
+import ReSwift
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, StoreSubscriber {
 
+    typealias StoreSubscriberStateType = AppState
+    
+    @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        mainStore.subscribe(self)
     }
-
-
+    
+    func newState(state: AppState) {
+        counterLabel.text = "\(mainStore.state.counter)"
+    }
+    
+    @IBAction func downTouch(_ sender: AnyObject) {
+        mainStore.dispatch(CounterActionDecrease());
+    }
+    
+    @IBAction func upTouch(_ sender: AnyObject) {
+        mainStore.dispatch(CounterActionIncrease());
+    }
 }
-
