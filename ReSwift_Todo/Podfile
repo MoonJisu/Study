@@ -7,6 +7,6 @@ target 'ReSwift_Todo' do
 
   # Pods for ReSwift_Todo
 pod 'ReSwift'
-
+pod 'Dwifft'
 
 end

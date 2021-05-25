@@ -1,16 +1,20 @@
 PODS:
+  - Dwifft (0.9)
   - ReSwift (6.1.0)
 
 DEPENDENCIES:
+  - Dwifft
   - ReSwift
 
 SPEC REPOS:
   trunk:
+    - Dwifft
     - ReSwift
 
 SPEC CHECKSUMS:
+  Dwifft: 42912068ed2a8146077d1a1404df18625bd086e1
   ReSwift: eab3c01e4279ba81b54a61e4fd6499634d20123a
 
-PODFILE CHECKSUM: b68e64195cb7a397359c14352849a6ff7b549b5e
+PODFILE CHECKSUM: 668345c016e3e3379f7ef3ba1bb101fb8fafb678
 
 COCOAPODS: 1.10.0
